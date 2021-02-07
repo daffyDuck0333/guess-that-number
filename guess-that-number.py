@@ -19,6 +19,8 @@ while 1:
     #random.state()
     number1 = random.randint(1, 50)
     number2 = random.randint(1, 50)
+    
+    # Our random numbers range should not be smaller than 10
     while not(number1 - number2 > 10 or number1 - number2 < -10):
         number1 = random.randint(1, 50)
         number2 = random.randint(1, 50)
@@ -48,3 +50,4 @@ while 1:
         print("😢 You Lost 😢")
         print(f"The secret number was {secret_number}")
     print("Do you still want to play? ")
+print("\n\nThanks for playing this game. Hope to see you soon. Bye!")
